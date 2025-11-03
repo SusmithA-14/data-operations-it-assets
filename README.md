@@ -146,19 +146,7 @@ python transform_data.py
 4. **Run all operations** - Executes all transformations in sequence
 5. **Exit**
 
-## 📈 Visualizations
-
-Kibana dashboard built on `it_asset_transformed` index:
-
-![Kibana Dashboard](visualization_screenshots/dashboard.jpeg)
-
-**Dashboard includes:**
-- **Assets by Country** - Geographic distribution of IT assets
-- **Lifecycle Status Distribution** - OS lifecycle status breakdown
-- **High vs Low Risk Assets** - Security risk assessment overview
-- **Top OS Providers** - Most common operating system vendors
-
-## 🔧 Requirements
+##  Requirements
 
 ### Python Dependencies
 ```bash
@@ -266,6 +254,18 @@ Dashboards + Analysis → README.md + Business Recommendations
 - ✅ Added `risk_level` and `system_age_years` derived fields
 - ✅ Filtered out invalid records during transformation
 - ✅ All operations completed with detailed logging
+
+## 📈 Final Visualizations
+
+### Kibana Dashboard Built on `it_asset_transformed` Index
+
+![Kibana Dashboard](visualization_screenshots/dashboard.jpeg)
+
+**Dashboard includes:**
+- **Assets by Country** - Geographic distribution of IT assets
+- **Lifecycle Status Distribution** - OS lifecycle status breakdown
+- **High vs Low Risk Assets** - Security risk assessment overview
+- **Top OS Providers** - Most common operating system vendors
 
 ## 🏆 Expected Outcomes & Learnings
 
