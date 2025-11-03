@@ -4,10 +4,14 @@ import pandas as pd
 import os
 from datetime import datetime
 import json
+import urllib3
+
+# Suppress SSL warnings for cleaner output
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # === CONFIGURATION ===
 ES_ENDPOINT = "https://my-elasticsearch-project-e5302c.es.us-central1.gcp.elastic.cloud:443"
-ES_API_KEY = "eHVqR0xwb0JKcEtTakJBRXRzbzI6YjhnQ0lhb2U1ZE45RzRTd3VGU3FJQQ=="
+ES_API_KEY = "ZTJod1Nab0J6dXpSVWFWeWlKdGw6VzZjT0xGbGFva1ZadUhHSTJLakxSQQ=="
 
 # CSV Configuration
 CSV_FILE_PATH = "it_asset_inventory_cleaned.csv"  # Change this to your CSV file path
@@ -17,7 +21,7 @@ TARGET_INDEX = "it_asset"  # Change this to your desired Elasticsearch index nam
 es = Elasticsearch(
     ES_ENDPOINT,
     api_key=ES_API_KEY,
-    verify_certs=True
+    verify_certs=False
 )
 
 # === CHECK CONNECTION ===
