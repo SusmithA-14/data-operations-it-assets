@@ -246,16 +246,16 @@ Dashboards + Analysis → README.md + Business Recommendations
 
 ### **index_data.py Execution Results**
 
-**VS Code Terminal Output:**
-![Index Data VS Code Results](visualization_screenshots/index_data_output.png)
+**Terminal Output:**
+![Index Data Terminal Results](visualization_screenshots/index_data_output.png)
 
 **Elasticsearch Verification:**
 ![Index Data Elasticsearch Results](visualization_screenshots/index_data_elasticsearch_results.png)
 
 ### **transform_data.py Execution Results**
 
-**VS Code Terminal Output:**
-![Transform Data VS Code Results](visualization_screenshots/transform_data_output.png)
+**Terminal Output:**
+![Transform Data Terminal Results](visualization_screenshots/transform_data_output.png)
 
 **Elasticsearch Verification:**
 ![Transform Data Elasticsearch Results](visualization_screenshots/transform_data_elasticsearch_results.png)
