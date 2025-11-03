@@ -53,9 +53,6 @@ Enhance indexed data with derived fields and cleanup operations.
 - Deleted records with missing `hostname` or `operating_system_provider = Unknown`
 - Updated records using `_update_by_query`
 
-### Screenshot: Elasticsearch Query Result
-![Elasticsearch Query](visualization_screenshots/transform_data_elasticsearch_results.png)
-
 ---
 
 ## 📈 PHASE 4 — Visualization and Insights
@@ -70,19 +67,19 @@ Create visual dashboards to derive business insights.
 **Dashboard includes:**
 
 - **Assets by Country** - Geographic distribution of IT assets
-![Assets by Country](visualization_screenshots/Assets by Country.png)
+![Assets by Country](visualization_screenshots/Assets_by_Country.png)
 *Insight: USA and India have the highest concentration of assets, indicating key operational regions for IT infrastructure management.*
 
 - **Lifecycle Status Distribution** - OS lifecycle status breakdown
-![Lifecycle Status Distribution](visualization_screenshots/Lifecycle Status Distribution.png)
+![Lifecycle Status Distribution](visualization_screenshots/Lifecycle_Status_Distribution.png)
 *Insight: Significant portion of systems are in EOL/EOS status, requiring immediate attention for security compliance and upgrade planning.*
 
 - **High vs Low Risk Assets** - Security risk assessment overview
-![High vs Low Risk Assets](visualization_screenshots/High vs Low Risk Assets.png)
+![High vs Low Risk Assets](visualization_screenshots/High_vs_Low_Risk_Assets.png)
 *Insight: Clear categorization enables prioritized security remediation efforts, focusing resources on high-risk EOL/EOS systems first.*
 
 - **Top OS Providers** - Most common operating system vendors
-![Top OS Providers](visualization_screenshots/Top OS Providers.png)
+![Top OS Providers](visualization_screenshots/Top_OS_Providers.png)
 *Insight: Diverse vendor landscape shows need for multi-vendor support strategies and standardization opportunities for cost optimization.*
 
 ---
