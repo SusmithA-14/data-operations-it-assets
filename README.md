@@ -162,7 +162,7 @@ Kibana dashboard built on `it_asset_transformed` index:
 
 ### Python Dependencies
 ```bash
-pip install elasticsearch pandas
+pip install elasticsearch
 ```
 
 ### Elasticsearch Requirements
