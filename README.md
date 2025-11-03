@@ -120,7 +120,7 @@ data-operations-it-assets/
 Update the Elasticsearch connection settings in both scripts:
 
 ```python
-ES_ENDPOINT = "https://your-elasticsearch-endpoint:443"
+ES_ENDPOINT = "your_endpoint_here"
 ES_API_KEY = "your-api-key"
 SOURCE_INDEX = "it_asset"
 TARGET_INDEX = "it_asset_transformed"
@@ -150,7 +150,7 @@ python transform_data.py
 
 Kibana dashboard built on `it_asset_transformed` index:
 
-![Kibana Dashboard](dashboard.jpeg)
+![Kibana Dashboard](visualization_screenshots/dashboard.jpeg)
 
 **Dashboard includes:**
 - **Assets by Country** - Geographic distribution of IT assets
@@ -220,8 +220,6 @@ PHASE 2: Data Indexing
 it_asset_inventory_cleaned.csv → index_data.py → [it_asset] Elasticsearch Index
                                      ↓
                                 • Bulk import
-                                • Field mappings
-                                • Error handling
 
 PHASE 3: Data Transformation
 [it_asset] → transform_data.py → [it_asset_transformed]
@@ -278,11 +276,3 @@ Dashboards + Analysis → README.md + Business Recommendations
 - ✔️ **Version Control**: Git workflow and collaborative development practices
 - ✔️ **Data Visualization**: Kibana dashboard creation for business intelligence
 - ✔️ **Business Analysis**: Deriving actionable insights from technical data
-
-## ✅ Technical Notes
-
-- The transformation process filters data, so `it_asset_transformed` may have fewer records than `it_asset`
-- Use `it_asset_transformed` for analysis and visualizations
-- Keep `it_asset` as the master dataset
-- All operations are logged with success/failure counts
-- Excel cleaning functions documented for reproducibility
